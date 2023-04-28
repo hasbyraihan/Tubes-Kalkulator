@@ -18,25 +18,5 @@
  */	
 void gotoxy(int x, int y);
 
-/**
- * Deskripsi 	: Modul ini bertujuan untuk mengubah karakter tertentu menjadi ASCII.
- * IS 			: Karakter belum diubah menjadi ASCII.
- * FS 			: Karakter telah diubah menjadi ASCII.
- */	
-
-
-/**
- * Deskripsi 	: Modul ini bertujuan untuk menampilkan isi tampilan menu
- * IS 			: Tampilan menu belum ditampilkan
- * FS 			: Tampilan menu ditampilkan
- */	
-
-/**
- * Deskripsi 	: Modul ini bertujuan untuk menampilkan isi help yang di ambil dari file
- * IS 			: Tampilan help belum ditampilkan
- * FS 			: Tampilan help ditampilkan
- */	
-
-
 
 #endif
