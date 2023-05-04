@@ -50,6 +50,10 @@ double calculate(address root, boolean *isSuccess)
                 return sqrt(calculate(root->rightChild,isSuccess));
                 break;
             }
+			case 'r':{
+				return log10(calculate(root->rightChild,isSuccess));
+				break;
+			}
         }
     }
     
@@ -131,7 +135,7 @@ int searchOperator(char str[], int start, int end)
 			{
 				posDivOrMul = i;
 				numDivOrMul++;
-			}else if(str[i] == '^' || str[i] == 'v')
+			}else if(str[i] == '^' || str[i] == 'v' || str[i] == 'r')
 			{
 				posPowOrRoot = i;
 				numPowOrRoot++;
