@@ -54,6 +54,10 @@ double calculate(address root, boolean *isSuccess)
             	return log10(calculate(root->rightChild,isSuccess));
 				break;
 			}
+			case 's':{
+				return sin(calculate(root->rightChild,isSuccess));
+				break;
+			}
         }
     }
     
@@ -135,7 +139,7 @@ int searchOperator(char str[], int start, int end)
 			{
 				posDivOrMul = i;
 				numDivOrMul++;
-			}else if(str[i] == '^' || str[i] == 'v' || str[i] == 'r')
+			}else if(str[i] == '^' || str[i] == 'v' || str[i] == 'r' || str[i] == 's')
 			{
 				posPowOrRoot = i;
 				numPowOrRoot++;

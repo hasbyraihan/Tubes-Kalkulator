@@ -65,7 +65,7 @@ boolean isValidExpression(char *expression) {
 			        && expression[i] != '/' && expression[i] != '*' && expression[i] != 'p'
 			        && expression[i] != '^' && expression[i] != '%' && expression[i] != 'v' 
 					&& expression[i] != '.' && expression[i] != '(' && expression[i] != ')' 
-					&& expression[i] != 'r' 
+					&& expression[i] != 'r' && expression[i] != 's'
             ) 
         {
         	gotoxy(15, 5);
