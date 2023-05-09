@@ -288,3 +288,11 @@ void deleteTree(address root)
 	
 	free(root);
 }
+
+void tampilTree(address root)
+{
+char tampil[] == postOrder;
+	if(tampil!=Nil){
+		printf("%s", tampil);
+	}
+}

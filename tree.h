@@ -19,6 +19,7 @@ typedef struct tElmtNode {
 	char opr; 			// Untuk menyimpan operator
 	address leftChild; 	// Pointer yang digunakan untuk menunjuk left child
 	address rightChild;	// Pointer yang digunakan untuk menunjuk ke right child
+	char tampil[];
 }ElmtNode;
 
 double calculate(address root, boolean *isSuccess);
@@ -73,5 +74,5 @@ void deleteTree(address root);
  * IS 			: Tree belum dihapus
  * FS 			: Tree sudah dihapus
  */
-
+void tampilTree(address root);
 #endif

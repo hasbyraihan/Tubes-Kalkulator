@@ -137,6 +137,9 @@ void printResult(Calculator calculator, boolean isSuccess, address root) {
     inOrder(root);
     gotoxy(64, 8);
     postOrder(root);
+    
+    gotoxy(64, 10);
+    tampilTree(root);
 }
 
 /**
