@@ -88,7 +88,7 @@ boolean isValidExpression(char *expression) {
 	// melakukan proses insertion
 	printf("\n\n");
     fflush(stdin);
-    gotoxy(15,4);
+    gotoxy(15,2);
     scanf("%s", calculator->expression);
     printf("\n\n");
 }
@@ -117,25 +117,25 @@ void printResult(Calculator calculator, boolean isSuccess, address root) {
 	// print calculator sesuai dengan format
     if(!isSuccess){
     	// jika proses perhitungan dibagi dengan 0
-		gotoxy(12,5);
+		gotoxy(15,3);
         printf("= %s","Error tidak bisa dibagi dengan 0");
     }
     else if (ceil(calculator.result) > calculator.result){
     	// jika proses perhitungan berhasil dan hasilnya adalah bilangan desimal
-		gotoxy(15,5);
+		gotoxy(15,3);
         printf("= %.2f",calculator.result);
     }
 	else{
 		// jika proses perhitungan berhasil dan hasilnya adalah bilangan bulat
-		gotoxy(15,5);
+		gotoxy(15,3);
         printf("= %d",(int)calculator.result);
     }
     
-    gotoxy(64, 8);
+    gotoxy(64, 6);
     preOrder(root);
-    gotoxy(64, 9);
+    gotoxy(64, 7);
     inOrder(root);
-    gotoxy(64, 10);
+    gotoxy(64, 8);
     postOrder(root);
 }
 
