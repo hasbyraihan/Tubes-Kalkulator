@@ -3,8 +3,8 @@
 <=======================================================>
 /		[1] Standard Calculator			|
 /		[2] BMI Calculator			|
-/		[3] History				|
-/		[4] Konvert Panjang			|
+/		[3] Konvert Panjang			|
+/		[4] History				|
 /		[5] Help				|
 /		[0] Exit				|
 <=======================================================>

@@ -63,15 +63,8 @@ int main(int argc, char *argv[]) {
 					}
 				}while(true);
 				goto menu;
+
 			}else if(input == '3'){
-				
-				system("mode 94, 30");
-				system("cls");
-				showStdHistory();
-				showBmiHistory();
-				goto menu;
-				
-			}else if(input == '4'){
 				// 
 				do{
 					showkonvP();
@@ -80,6 +73,13 @@ int main(int argc, char *argv[]) {
 						break;
 					}
 				}while(true);
+				goto menu;
+			}else if(input == '4'){
+				
+				system("mode 94, 30");
+				system("cls");
+				showStdHistory();
+				showBmiHistory();
 				goto menu;
 			}else if(input == '5'){
 				// Help
