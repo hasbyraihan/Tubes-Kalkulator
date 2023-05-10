@@ -54,6 +54,10 @@ double calculate(address root, boolean *isSuccess)
             	return (log10(calculate(root->rightChild,isSuccess)))/(log10(calculate(root->leftChild,isSuccess)));
 				break;
 			}
+            case 'e':{
+            	return (calculate(root->rightChild,isSuccess))*(10*(calculate(root->leftChild,isSuccess)));
+				break;
+			}
 			case 's':{
 				return sin(calculate(root->rightChild,isSuccess));
 				break;
@@ -66,7 +70,7 @@ double calculate(address root, boolean *isSuccess)
 				return tan(calculate(root->rightChild,isSuccess));
 				break;
 			}
-			case 'e':{
+			case 'x':{
 				return exp(calculate(root->rightChild,isSuccess));
 				break;
 			}
@@ -151,11 +155,11 @@ int searchOperator(char str[], int start, int end)
 	    			numPlusOrSub++;
 				}
 			}
-			else if(str[i] == '*' || str[i] == '/' || str[i] == '%' || str[i] == 'p')
+			else if(str[i] == '*' || str[i] == '/' || str[i] == '%' || str[i] == 'p' || str[i] == 'e')
 			{
 				posDivOrMul = i;
 				numDivOrMul++;
-			}else if(str[i] == '^' || str[i] == 'v' || str[i] == 'l' || str[i] == 's' || str[i] == 'c' || str[i] == 't' || str[i] == 'e' || str[i] == 'n')
+			}else if(str[i] == '^' || str[i] == 'v' || str[i] == 'l' || str[i] == 's' || str[i] == 'c' || str[i] == 't' || str[i] == 'x' || str[i] == 'n')
 			{
 				posPowOrRoot = i;
 				numPowOrRoot++;

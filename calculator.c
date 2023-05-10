@@ -67,6 +67,7 @@ boolean isValidExpression(char *expression) {
 					&& expression[i] != '.' && expression[i] != '(' && expression[i] != ')' 
 					&& expression[i] != 'l' && expression[i] != 's' && expression[i] != 'c'
 					&& expression[i] != 't' && expression[i] != 'e' && expression[i] != 'n'
+					&& expression[i] != 'x'
             ) 
         {
         	gotoxy(15, 5);
@@ -165,7 +166,7 @@ boolean isContinueCalculator() {
 	
 	// tentukan apakah user mengulang proses atau tidak
 	while(true){
-		gotoxy(15,24);
+		gotoxy(50,24);
     	printf("Ingin Mencoba Kembali? (y/n) : ");
         fflush(stdin);
         scanf("%c", &choice);
@@ -175,7 +176,7 @@ boolean isContinueCalculator() {
         }else if(choice == 'n' || choice == 'N') {
         	return false;
 		}else {
-			gotoxy(15,25);
+			gotoxy(50,25);
             printf("Harap menginputkan  y(yes), n(no)\n");
         }
     }
