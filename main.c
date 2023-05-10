@@ -81,11 +81,16 @@ int main(int argc, char *argv[]) {
 					}
 				}while(true);
 				goto menu;
+			}else if(input == '5'){
+				// Help
+				showHelp();
+				goto menu;
 			}else if(input == '0'){
+			
 				exit(1);
 			}
-		}while(input != '0');
-	
+	}while(input != '0');
+			
 	return 0;
 }
 

@@ -86,6 +86,39 @@ void showMenu(){
 	printf("\n Choose menu : ");
 }
 
+
+/**
+ * Deskripsi 	: Modul ini bertujuan untuk menampilkan isi credit yang di ambil dari file
+ * IS 			: Tampilan credit belum ditampilkan
+ * FS 			: Tampilan credit ditampilkan
+ */	
+void showHelp(){
+	system("mode 82, 100"); 
+	system("cls");
+	FILE *fh;
+	char help[200];
+	fh = fopen("bin/help.txt", "r");
+	if(fh == NULL)
+		{
+			printf("\nFile not found...");
+			getch();
+			showMenu();
+		}
+	while(!feof(fh))
+	{
+		fgets(help,sizeof(help),fh);
+			for(int i = 0; i < strlen(help); i++)
+			{
+				charToASCII(help[i]);
+				
+			}
+	}
+	fclose(fh);	
+	printf("\n");
+	system("pause");
+	showMenu();
+}
+
 /**
  * Deskripsi 	: Modul ini bertujuan untuk mengubah karakter tertentu menjadi ASCII.
  * IS 			: Karakter belum diubah menjadi ASCII.

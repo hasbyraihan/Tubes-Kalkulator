@@ -18,6 +18,14 @@ void gotoxy(int x, int y);
 
 void showMenu();
 
+void showHelp();
+
+/**
+ * Deskripsi 	: Modul ini bertujuan untuk menampilkan isi credit yang di ambil dari file
+ * IS 			: Tampilan credit belum ditampilkan
+ * FS 			: Tampilan credit ditampilkan
+ */	
+
 void charToASCII(char c);
 
 #endif
