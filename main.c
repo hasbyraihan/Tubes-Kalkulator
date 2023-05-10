@@ -1,4 +1,4 @@
-
+#include "konvPanjang.h"
 #include "UI.h"
 #include "calculator.h"
 #include "bmi.h"
@@ -71,6 +71,16 @@ int main(int argc, char *argv[]) {
 				showBmiHistory();
 				goto menu;
 				
+			}else if(input == '4'){
+				// 
+				do{
+					showkonvP();
+					konvP();
+					if(!isContinueCalculator()){
+						break;
+					}
+				}while(true);
+				goto menu;
 			}else if(input == '0'){
 				exit(1);
 			}

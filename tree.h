@@ -79,4 +79,6 @@ void deleteTree(address root);
 void depth0(address root);
 void depth1(address root);
 void depth2(address root);
+void depth3(address root);
+//void printBinaryTree(address root, int space);
 #endif

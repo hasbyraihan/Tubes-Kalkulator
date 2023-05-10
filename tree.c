@@ -341,6 +341,24 @@ void deleteTree(address root)
 			printf("%g", root->leftChild->rightChild->digit);
 			}
 	}
+	void depth3(address root){
+		if(root->leftChild->leftChild->leftChild->isOperator==true){
+			gotoxy(60,13);
+			printf("%c", root->leftChild->leftChild->leftChild->opr);
+			}
+		else{
+			gotoxy(60,13);
+			printf("%g", root->leftChild->leftChild->leftChild->digit);	
+			}
+		if(root->leftChild->leftChild->rightChild->isOperator==true){
+			gotoxy(62,13);
+			printf("%c", root->leftChild->leftChild->rightChild->opr);
+			}
+		else{
+			gotoxy(62,13);
+			printf("%g", root->leftChild->leftChild->rightChild->digit);
+			}
+	}	
 
 
 //void tampilTree(address root)

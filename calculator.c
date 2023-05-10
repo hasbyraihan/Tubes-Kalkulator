@@ -61,7 +61,7 @@ boolean isValidExpression(char *expression) {
 	// Check apakah pada string terdapat simbol yang bukan operator atau tidak valid
 	for(i=strlen(expression)-1 ; i>=0 ; i--)
     {
-        if(!isdigit(expression[i]) 	&& expression[i] != '-' && expression[i] != '+'
+        if(!isdigit(expression[i]) 	&& expression[i] != '-' && expression[i] != '+' && expression[i] != '!'
 			        && expression[i] != '/' && expression[i] != '*' && expression[i] != 'p'
 			        && expression[i] != '^' && expression[i] != '%' && expression[i] != 'v' 
 					&& expression[i] != '.' && expression[i] != '(' && expression[i] != ')' 
@@ -137,13 +137,19 @@ void printResult(Calculator calculator, boolean isSuccess, address root) {
     inOrder(root);
     gotoxy(64, 8);
     postOrder(root);
-    
-    gotoxy(64, 10);
-	depth0(root);
-	gotoxy(64, 11);
-    depth1(root);
-	gotoxy(64, 12);
-    depth2(root);
+//    
+//    gotoxy(64, 10);
+//    printBinaryTree(root, 0);
+
+/*tampil tree tapi cacat*/
+//    gotoxy(64, 10);
+//	depth0(root);
+//	gotoxy(64, 11);
+//    depth1(root);
+//	gotoxy(64, 12);
+//    depth2(root);
+//	gotoxy(64, 13);
+//    depth3(root);
     
 //    gotoxy(64, 10);
 //    tampilTree(root);
