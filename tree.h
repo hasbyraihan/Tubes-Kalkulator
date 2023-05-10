@@ -75,4 +75,8 @@ void deleteTree(address root);
  * FS 			: Tree sudah dihapus
  */
 //void tampilTree(address root);
+
+void depth0(address root);
+void depth1(address root);
+void depth2(address root);
 #endif

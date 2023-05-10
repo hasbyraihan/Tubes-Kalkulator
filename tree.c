@@ -297,6 +297,52 @@ void deleteTree(address root)
 	free(root);
 }
 
+	void depth0(address root){
+		if(root->isOperator==true){
+			printf("%c", root->opr);
+		}
+		else{
+			printf("%g", root->digit);	
+		}
+	}
+	void depth1(address root){
+		if(root->leftChild->isOperator==true){
+			gotoxy(62,11);
+			printf("%c", root->leftChild->opr);
+		}
+		else{
+			gotoxy(62,11);
+			printf("%g", root->leftChild->digit);	
+		}
+		if(root->rightChild->isOperator==true){
+			gotoxy(66,11);
+			printf("%c", root->rightChild->opr);
+		}
+		else{
+			gotoxy(66,11);
+			printf("%g", root->rightChild->digit);
+		}
+	}
+	void depth2(address root){
+		if(root->leftChild->leftChild->isOperator==true){
+			gotoxy(61,12);
+			printf("%c", root->leftChild->leftChild->opr);
+			}
+		else{
+			gotoxy(61,12);
+			printf("%g", root->leftChild->leftChild->digit);	
+			}
+		if(root->leftChild->rightChild->isOperator==true){
+			gotoxy(63,12);
+			printf("%c", root->rightChild->leftChild->opr);
+			}
+		else{
+			gotoxy(63,12);
+			printf("%g", root->leftChild->rightChild->digit);
+			}
+	}
+
+
 //void tampilTree(address root)
 //{
 //char tampil[] == postOrder;

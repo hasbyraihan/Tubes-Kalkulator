@@ -138,6 +138,13 @@ void printResult(Calculator calculator, boolean isSuccess, address root) {
     gotoxy(64, 8);
     postOrder(root);
     
+    gotoxy(64, 10);
+	depth0(root);
+	gotoxy(64, 11);
+    depth1(root);
+	gotoxy(64, 12);
+    depth2(root);
+    
 //    gotoxy(64, 10);
 //    tampilTree(root);
 }
