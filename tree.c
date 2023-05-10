@@ -51,7 +51,7 @@ double calculate(address root, boolean *isSuccess)
                 break;
             }
             case 'l':{
-            	return log10(calculate(root->rightChild,isSuccess));
+            	return (log10(calculate(root->rightChild,isSuccess)))/(log10(calculate(root->leftChild,isSuccess)));
 				break;
 			}
 			case 's':{
