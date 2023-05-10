@@ -131,9 +131,10 @@ void inputBMI(dataBMI data){
 	data.bmi = calculateBMI(data);
 	if(data.height > 0 && data.weight > 0){	
 		resultBMI(data);
+	saveBmiHistory(&data.height, &data.weight, &data.bmi);
 	}else{
 		gotoxy(6,12);
-		printf("Inputan Salah !!!\n");
+		printf("Invalid Input!!\n");
 	}
 }
 
