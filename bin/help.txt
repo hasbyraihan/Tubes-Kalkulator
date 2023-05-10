@@ -1,0 +1,62 @@
+{===============================================================================}
+|					HELP					|
+<===============================================================================>
+|	   	Selamat datang di aplikasi Cyclops Calculator!			|
+<===============================================================================>
+| Aplikasi ini mempunyai 5 fitur, yaitu:                          		|
+|                                                                 	        |
+| [1] Standard Calculator, kalkulator dengan perhitungan standar. 		|
+|	- Input angka 1 untuk menggunakan fitur ini. Setelah itu		|
+|	  akan muncul tampilan kalkulator.					|
+|	- Anda dapat menginputkan ekspresi matematika dengan jumlah		|
+|	  maksimal sebanyak 50 karakter. Setelah itu maka akan			|
+|	  tampil hasil perhitungan.						|
+|	- Operator yang berlaku pada fitur ini antara lain:			|
+|	   () -> pengelompokan operasi						|
+|	    ^ -> operator pangkat						|
+|	    v -> operator akar							|
+|	    * -> operator kali							|
+|	    $ -> operator bagi							|
+|	    % -> operator persen						|
+|	    + -> operator tambah						|
+|	    - -> operator kurang						|
+|	    s -> operator sin (radian)						|
+|	    c -> operator cos (radian)						|
+|	    t -> operator tan (radian)						|
+|	    y -> operator arcsin (radian)					|
+|	    u -> operator arccos (radian)					|
+|	    o -> operator arctan (radian)					|
+|	    l -> operator logaritma bebas					|
+|	    n -> operator logaritma natural					|
+|	    x -> operator eksponen						|
+|	    e -> operator euler							|
+|	- Operand dapat digunakan berupa bilangan bulat, bilangan 		|
+|	  desimal, nol, bernilai positif atau bernilai negatif.			|
+|										|
+| [2] BMI Calculator, kalkulator yang menghitung indeks masa 			|
+|	tubuh.									|
+|	- Input angka 1 untuk menggunakan fitur ini. Setelah itu		|
+|	  akan muncul tampilan kalkulator.					|
+|	- Satuan yang berlaku pada fitur ini adalah satuan metrik.		|
+|	- Anda akan diminta untuk menginput berat badan dalam kg    		|
+|	  dan tinggi badan dalam cm. Setelah diinput maka akan 			|
+|	  akan tampil hasil perhitungan indeks masa tubuh.			|
+|	- Tersedia keterangan kategori dari indeks massa tubuh:			|
+|		Kurus    -> Skor BMI 18.5					|
+|		Ideal	   -> Skor BMI 18.5 - 24.9				|
+|		Gemuk	   -> Skor BMI 25 - 29.9				|
+|		Obesitas -> Skor BMI 30 atau lebih				|
+|										|
+| [3] Convert Suhu, Fitur yang bisa mengubah suhu 				|
+|		dari Celcius, Reamur, Kelv, Fahrenheit				|
+|										|
+| [4] Convert Panjang, Fitur yang mengubah suhu					|
+|										|
+| [5] History, berisi riwayat penggunaan aplikasi.				|
+|										|
+| [6] Help, berisi instruksi penggunaan aplikasi.				|
+|										|
+| [0] Exit, keluar dari aplikasi.						|
+<===============================================================================>
+|							   			|
+@===============================================================================~
