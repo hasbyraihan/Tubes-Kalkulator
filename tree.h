@@ -74,5 +74,5 @@ void deleteTree(address root);
  * IS 			: Tree belum dihapus
  * FS 			: Tree sudah dihapus
  */
-void tampilTree(address root);
+//void tampilTree(address root);
 #endif

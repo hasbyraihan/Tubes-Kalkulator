@@ -50,7 +50,7 @@ double calculate(address root, boolean *isSuccess)
                 return sqrt(calculate(root->rightChild,isSuccess));
                 break;
             }
-            case 'r':{
+            case 'l':{
             	return log10(calculate(root->rightChild,isSuccess));
 				break;
 			}
@@ -64,6 +64,14 @@ double calculate(address root, boolean *isSuccess)
 			}
 			case 't':{
 				return tan(calculate(root->rightChild,isSuccess));
+				break;
+			}
+			case 'e':{
+				return exp(calculate(root->rightChild,isSuccess));
+				break;
+			}
+			case 'n':{
+				return log(calculate(root->rightChild,isSuccess));
 				break;
 			}
         }
@@ -147,7 +155,7 @@ int searchOperator(char str[], int start, int end)
 			{
 				posDivOrMul = i;
 				numDivOrMul++;
-			}else if(str[i] == '^' || str[i] == 'v' || str[i] == 'r' || str[i] == 's' || str[i] == 'c' || str[i] == 't')
+			}else if(str[i] == '^' || str[i] == 'v' || str[i] == 'l' || str[i] == 's' || str[i] == 'c' || str[i] == 't' || str[i] == 'e' || str[i] == 'n')
 			{
 				posPowOrRoot = i;
 				numPowOrRoot++;
@@ -289,10 +297,10 @@ void deleteTree(address root)
 	free(root);
 }
 
-void tampilTree(address root)
-{
-char tampil[] == postOrder;
-	if(tampil!=Nil){
-		printf("%s", tampil);
-	}
-}
+//void tampilTree(address root)
+//{
+//char tampil[] == postOrder;
+//	if(tampil!=Nil){
+//		printf("%s", tampil);
+//	}
+//}

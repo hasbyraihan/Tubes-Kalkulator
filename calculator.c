@@ -65,8 +65,8 @@ boolean isValidExpression(char *expression) {
 			        && expression[i] != '/' && expression[i] != '*' && expression[i] != 'p'
 			        && expression[i] != '^' && expression[i] != '%' && expression[i] != 'v' 
 					&& expression[i] != '.' && expression[i] != '(' && expression[i] != ')' 
-					&& expression[i] != 'r' && expression[i] != 's' && expression[i] != 'c'
-					&& expression[i] != 't'
+					&& expression[i] != 'l' && expression[i] != 's' && expression[i] != 'c'
+					&& expression[i] != 't' && expression[i] != 'e' && expression[i] != 'n'
             ) 
         {
         	gotoxy(15, 5);
@@ -138,8 +138,8 @@ void printResult(Calculator calculator, boolean isSuccess, address root) {
     gotoxy(64, 8);
     postOrder(root);
     
-    gotoxy(64, 10);
-    tampilTree(root);
+//    gotoxy(64, 10);
+//    tampilTree(root);
 }
 
 /**
