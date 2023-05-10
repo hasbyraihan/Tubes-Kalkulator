@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;4;0;0;0
-UnitCount=10
+UnitCount=12
 
 [VersionInfo]
 Major=1
@@ -151,7 +151,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit11]
-FileName=history.h
+FileName=..\..\Desktop\TUBES'\1B_Kelompok 2_Raka Mahardika Maulana_Mochammad Ferdy Fauzan_Muhammad Daffa Raihandika\CyclopsCalculator\history.c
 CompileCpp=0
 Folder=
 Compile=1
@@ -161,7 +161,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit12]
-FileName=history.c
+FileName=..\..\Desktop\TUBES'\1B_Kelompok 2_Raka Mahardika Maulana_Mochammad Ferdy Fauzan_Muhammad Daffa Raihandika\CyclopsCalculator\history.h
 CompileCpp=0
 Folder=
 Compile=1

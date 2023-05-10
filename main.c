@@ -2,6 +2,7 @@
 #include "UI.h"
 #include "calculator.h"
 #include "bmi.h"
+#include "history.h"
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
@@ -11,9 +12,9 @@ int main(int argc, char *argv[]) {
 	boolean isSuccess;
 	dataBMI data;
 
-	PlaySound(TEXT("bin/IntroKeren.wav"),NULL,SND_SYNC);
+//	PlaySound(TEXT("bin/IntroKeren.wav"),NULL,SND_SYNC);
 	
-	splashScreen();
+//	splashScreen();
 	getch();
 	
 	menu:
@@ -37,6 +38,10 @@ int main(int argc, char *argv[]) {
 						calculator.expressionTree = buildTree(calculator.expression, 0, strlen(calculator.expression)-1);	// untuk membuat tree
 						boolean isSuccess = isCalculateSuccess(&calculator, calculator.expressionTree);	// melakukan perhitungan dari ekspresi matematika yang diinputkan oleh user pada tree
 						printResult(calculator, isSuccess, calculator.expressionTree);	// menampilkan hasil perhitungan
+						if(isSuccess){
+						// save history pada file
+							saveStdHistory(calculator.expression, calculator.result);
+						}
 						deleteTree(calculator.expressionTree);
 						// menanyakan kepada user apakah akan mencoba kalkulator kembali atau tidak
 						if(!isContinueCalculator()){
@@ -58,6 +63,14 @@ int main(int argc, char *argv[]) {
 					}
 				}while(true);
 				goto menu;
+			}else if(input == '3'){
+				
+				system("mode 94, 30");
+				system("cls");
+				showStdHistory();
+				showBmiHistory();
+				goto menu;
+				
 			}else if(input == '0'){
 				exit(1);
 			}
