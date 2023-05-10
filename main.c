@@ -1,8 +1,9 @@
-#include "konvPanjang.h"
 #include "UI.h"
 #include "calculator.h"
 #include "bmi.h"
 #include "history.h"
+#include "konvPanjang.h"
+#include "ConvertSuhu.h"
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
@@ -11,7 +12,7 @@ int main(int argc, char *argv[]) {
 	Calculator calculator;
 	boolean isSuccess;
 	dataBMI data;
-
+	int ConS;
 //	PlaySound(TEXT("bin/IntroKeren.wav"),NULL,SND_SYNC);
 	
 //	splashScreen();
@@ -63,8 +64,44 @@ int main(int argc, char *argv[]) {
 					}
 				}while(true);
 				goto menu;
-
 			}else if(input == '3'){
+				// 
+				do{
+					showkonv();
+					gotoxy(3, 7);
+   					printf("Pilih apa yang akan anda Convert : ");
+   					gotoxy(49,8);
+    				printf("1. Convert Suhu Celcius");
+					gotoxy(49,10);
+    				printf("2. Convert Suhu Reamur");
+					gotoxy(49,12);
+    				printf("3. Convert Suhu Kelvin");
+					gotoxy(49,14);
+    				printf("4. Convert Suhu Fahrenheit");
+    				gotoxy(39, 7);
+    				scanf("%d", &ConS);
+    				
+    				switch(ConS){
+    					case 1:
+    						ConCel();
+    						break;
+    					case 2:
+    						ConReam();
+    						break;
+    					case 3:
+    						ConKelv();
+    						break;
+    					case 4:
+    						ConFahr();
+    						break;
+					}
+   				
+					if(!isContinueCalculator()){
+						break;
+					}
+				}while(true);
+				goto menu;
+			}else if(input == '4'){
 				// 
 				do{
 					showkonvP();
@@ -74,17 +111,18 @@ int main(int argc, char *argv[]) {
 					}
 				}while(true);
 				goto menu;
-			}else if(input == '4'){
+			}else if(input == '5'){
 				
 				system("mode 94, 30");
 				system("cls");
 				showStdHistory();
 				showBmiHistory();
 				goto menu;
-			}else if(input == '5'){
+			}else if(input == '6'){
 				// Help
 				showHelp();
 				goto menu;
+
 			}else if(input == '0'){
 			
 				exit(1);

@@ -3,9 +3,10 @@
 <=======================================================>
 /		[1] Standard Calculator			|
 /		[2] BMI Calculator			|
-/		[3] Konvert Panjang			|
-/		[4] History				|
-/		[5] Help				|
+/		[3] Konvert Suhu			|
+/		[4] Konvert Panjang			|
+/		[5] History				|
+/		[6] Help				|
 /		[0] Exit				|
 <=======================================================>
 /							|
