@@ -70,6 +70,18 @@ double calculate(address root, boolean *isSuccess)
 				return tan(calculate(root->rightChild,isSuccess));
 				break;
 			}
+			case 'y':{
+				return asin(calculate(root->rightChild,isSuccess));
+				break;
+			}
+			case 'u':{
+				return acos(calculate(root->rightChild,isSuccess));
+				break;
+			}
+			case 'o':{
+				return atan(calculate(root->rightChild,isSuccess));
+				break;
+			}
 			case 'x':{
 				return exp(calculate(root->rightChild,isSuccess));
 				break;
@@ -159,7 +171,7 @@ int searchOperator(char str[], int start, int end)
 			{
 				posDivOrMul = i;
 				numDivOrMul++;
-			}else if(str[i] == '^' || str[i] == 'v' || str[i] == 'l' || str[i] == 's' || str[i] == 'c' || str[i] == 't' || str[i] == 'x' || str[i] == 'n')
+			}else if(str[i] == '^' || str[i] == 'v' || str[i] == 'l' || str[i] == 's' || str[i] == 'c' || str[i] == 't' || str[i] == 'x' || str[i] == 'n' || str[i] == 'u' || str[i] == 'o' || str[i] == 'y')
 			{
 				posPowOrRoot = i;
 				numPowOrRoot++;
